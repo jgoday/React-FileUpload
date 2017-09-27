@@ -10,6 +10,7 @@
 
 /*eslint indent: 0 */
 const React = require('react')
+const createReactClass = require('create-react-class');
 const PT = require('prop-types')
 
 const emptyFunction = function() {}
@@ -21,7 +22,7 @@ const IEFormGroup = [true]
 let xhrList = []
 let currentXHRID = 0
 
-const FileUpload = React.createClass({
+const FileUpload = createReactClass({
 
     /*类型验证*/
     propTypes: {

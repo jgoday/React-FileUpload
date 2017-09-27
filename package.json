@@ -25,8 +25,9 @@
   "author": "Cheesu@Tencent",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.0.0",
-    "prop-types": "^15.6.0"
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
