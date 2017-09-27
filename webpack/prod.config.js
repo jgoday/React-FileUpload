@@ -7,6 +7,8 @@ module.exports = merge(baseConfig, {
     output: {
         path: __dirname +'/../dist',
         filename: '[name].min.js',
+        library: 'library',
+        libraryTarget: 'umd'
     },
 
     plugins: [

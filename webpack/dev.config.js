@@ -5,5 +5,7 @@ module.exports = merge(baseConfig, {
     output: {
         path: __dirname + '/../dist',
         filename: '[name].js',
+        library: 'library',
+        libraryTarget: 'umd'
     }
 });

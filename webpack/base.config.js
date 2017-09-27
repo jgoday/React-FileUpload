@@ -3,19 +3,17 @@ const path = require('path')
 
 const plugins = [
     new webpack.EnvironmentPlugin([
-        'NODE_ENV',
+        'NODE_ENV'
     ])
 ]
 
 module.exports = {
     entry: {
-        main: path.join(__dirname, '../src/FileUpload.js')
+        main: path.resolve(__dirname, '../src/FileUpload.js')
     },
 
-    context: path.join(__dirname),
-
     resolve: {
-        extensions: [".js"]
+        extensions: ['.js']
     },
 
     module: {
@@ -28,15 +26,16 @@ module.exports = {
                 }
             }
         ]
-        },
+    },
 
-    externals: {
+    externals: [{
         'react': {
             root: 'React',
             commonjs2: 'react',
             commonjs: 'react',
             amd: 'react'
         }
-    },
+    }],
+
     plugins: plugins
 }
