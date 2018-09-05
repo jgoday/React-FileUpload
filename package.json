@@ -25,9 +25,7 @@
   "author": "Cheesu@Tencent",
   "license": "MIT",
   "dependencies": {
-    "create-react-class": "^15.6.2",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "create-react-class": "^15.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
@@ -36,8 +34,14 @@
     "babel-preset-react": "^6.5.0",
     "es5-shim": "^4.1.10",
     "jsx-loader": "^0.13.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
     "webpack": "^3.6.0",
     "webpack-merge": "^4.1.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15",
+    "react": "^16"
   },
   "bugs": {
     "url": "https://github.com/SoAanyip/React-FileUpload/issues"
